@@ -1,0 +1,94 @@
+def incializarTabuleiro():
+   matriz = [[0,0,0],
+            [0,0,0],
+            [0,0,0] ]
+
+
+def exibirTabuleiro(matriz):
+   print(matriz[0]+ "|" + matriz[1]+ "|" + matriz[2])
+   print("--------")
+   print(matriz[3] + "|" + matriz[4]+ "|"+ matriz[5])
+   print("--------")
+   print(matriz[6]+ "|" + matriz[7]+ "|" + matriz[8])
+
+
+
+def imprimirMenuPrincipal():
+
+
+
+
+
+
+def leiaCoordenadaLinha():
+
+
+
+
+
+
+def imprimePontuacao():
+
+
+
+
+
+
+def posicaoValida():
+    if tabuleiro[linha][coluna] != ' ':
+                print("Essa posição já está ocupada. Tente novamente.")
+                continue
+
+
+
+
+
+def verificaVencedor():
+
+
+
+
+
+def verificaVelha():
+
+
+
+
+
+
+def modoJogador():
+
+
+
+
+
+
+def modoFacil():
+
+
+
+
+
+
+def modoDificil():
+
+
+
+
+
+
+def jogadaUsuario():
+
+
+
+
+
+
+
+def jogadaMaquinaFacil():
+
+
+
+
+
+def jogadaMaquinaDificil():
