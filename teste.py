@@ -13,16 +13,16 @@ matriz = inicializarTabuleiro()
 imprimirtabuleiro(matriz)
 
 def imprimirMenuPrincipal():
-    print(f"""          
+    print(f"""\033[36m      
           +----------------------------------+
            (1) = Jogador X Jogador
            (2) = Jogador X Máquina(Fácil)
            (3) = Jogador X Máquina(Difícil)
           +----------------------------------+
           """)
-    escolha = int(input("-- Escolha o número correspondente ao modo de jogo que desejar jogar: "))
+    escolha = int(input("\033[35m-- Escolha o número correspondente ao modo de jogo que desejar jogar: "))
     if escolha < 1 or escolha > 3:
-        print("Escolha inválida") 
+        print("\033[31mEscolha inválida") 
 imprimirMenuPrincipal()
 
 def posicao_valida(matriz):
@@ -38,11 +38,11 @@ def leia_coordenada(matriz):
     while True:
         print("Jogador 1 começa")
 
-        linha = int(input("Insira o número da linha: "))
-        coluna = int(input("Insira o número da coluna: "))
+        linha = int(input("\033[30mInsira o número da linha: "))
+        coluna = int(input("\033[30mInsira o número da coluna: "))
         if (linha, coluna) in posicoes:
             return (linha, coluna)
-        print("Posição já ocupada ou inválida")
+        print("\033[31mPosição já ocupada ou inválida")
 
 def verificar_vencedor(matriz):
     for i in range (3): #verificação linha
