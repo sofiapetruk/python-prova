@@ -6,7 +6,7 @@ def incializarTabuleiro(n_linhas, n_colunas):
     #     colunas = []    
     #     matriz_princial.append(linha,colunas) # fora do primeiro for pq ele só adiciona a coluna
     # return matriz_princial
-    matriz = [{0 for i in range (3)}{0 for i in range (3)}]
+    matriz = [{0 for i in range (3)},{0 for j in range (3)}]
     
     for linha in range (3):
         for coluna in range(3):
@@ -24,7 +24,7 @@ def imprimirTabuleiro(tabuleiro):
     for i in range(len(tabuleiro)):
         posicao = ""
         for j in range(len(tabuleiro)):
-            posicao = "" = [i][j]
+            posicao = "" 
         print(posicao)
 
 
@@ -54,6 +54,9 @@ def imprimePontuacao():
 
 
 def posicaoValida():
+    if tabuleiro[linha][coluna] != ' ':
+                print("Essa posição já está ocupada. Tente novamente.")
+                continue
 
 
 
